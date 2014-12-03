@@ -1,0 +1,32 @@
+<scene>
+<instance name="sphere" path="models/sphere" />
+<instance name="box" path="models/box" />
+<instance name="cylinder" path="models/cylinder" />
+<instance name="cone" path="models/cone" />
+<image name="checkerboard" path="checkerboard.png" />
+<image name="empty" path="empty.png" />
+<instance name="inverted-box" path="models/inverted-box" />
+
+<transform>
+<set>
+<scale>1 1 1</scale>
+<translate>0 0 -10</translate>
+</set>
+<object instanceof="sphere">
+<material>
+<ambient>1 0 0</ambient>
+<diffuse>1 0 0</diffuse>
+<specular>1 0 0</specular>
+<shininess>10</shininess>
+</material>
+<light>
+<ambient>.2 .2 .2</ambient>
+<diffuse>.4 .4 .4</diffuse>
+<specular>0.8 0.8 0.8</specular>
+<position>200 200 200</position>
+<spotangle>90</spotangle>
+<spotdirection>1 0 0 </spotdirection>
+</light>
+</object>
+</transform>
+</scene>

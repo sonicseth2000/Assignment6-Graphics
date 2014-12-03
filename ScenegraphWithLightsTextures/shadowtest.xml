@@ -1,0 +1,109 @@
+<scene>
+<instance name="sphere" path="models/sphere" />
+<instance name="box" path="models/box" />
+<instance name="cylinder" path="models/cylinder" />
+<instance name="cone" path="models/cone" />
+<light>
+<ambient>.3 .3 .3</ambient>
+<diffuse>.3 .3 .3</diffuse>
+<specular>.4 .4 .4</specular>
+<position>0 0 100</position>
+<spotangle>90</spotangle>
+<spotdirection>1 0 0 </spotdirection>
+</light>
+<light>
+<ambient>.3 .3 .3</ambient>
+<diffuse>.3 .3 .3</diffuse>
+<specular>.4 .4 .4</specular>
+<position>0 500 0</position>
+<spotangle>90</spotangle>
+<spotdirection>1 0 0 </spotdirection>
+</light>
+<light>
+<ambient>.3 .3 .3</ambient>
+<diffuse>.3 .3 .3</diffuse>
+<specular>.4 .4 .4</specular>
+<position>500 500 0</position>
+<spotangle>90</spotangle>
+<spotdirection>1 0 0 </spotdirection>
+</light>
+<transform>
+<set>
+<scale>20 20 20</scale>
+</set>
+<object instanceof="sphere">
+<material>
+<ambient>0 1 0</ambient>
+<diffuse>0 1 0</diffuse>
+<specular>0 1 0</specular>
+<shininess>100</shininess>
+<!--the following four will be relevant in ray tracer -->
+<absorption>0.5 </absorption>
+<reflection>0.5</reflection>
+<transparency>0.0</transparency>
+<refractive>1.2</refractive>
+</material>
+<!-- light added to object node -->
+</object>
+</transform>
+<transform>
+<set>
+<scale>20 20 20</scale>
+<translate>50 50 -50</translate>
+</set>
+<object instanceof="sphere">
+<material>
+<ambient>1 1 1</ambient>
+<diffuse>1 1 1</diffuse>
+<specular>1 1 1</specular>
+<shininess>100</shininess>
+<!--the following four will be relevant in ray tracer -->
+<absorption>0.5 </absorption>
+<reflection>0.1</reflection>
+<transparency>0.4</transparency>
+<refractive>1.2</refractive>
+</material>
+<!-- light added to object node -->
+</object>
+</transform>
+<transform>
+<set>
+<scale>100 20 100</scale>
+<translate>0 -60 0</translate>
+</set>
+<object instanceof="box">
+<material>
+<ambient>1 0 0</ambient>
+<diffuse>1 0 0</diffuse>
+<specular>1 0 0</specular>
+<shininess>100</shininess>
+<!--the following four will be relevant in ray tracer -->
+<absorption>0.5 </absorption>
+<reflection>0.5</reflection>
+<transparency>0.0</transparency>
+<refractive>1.2</refractive>
+</material>
+<!-- light added to object node -->
+</object>
+</transform>
+<transform>
+<set>
+<scale>20 100 100</scale>
+<translate>-80 0 0</translate>
+</set>
+<object instanceof="box">
+<material>
+<ambient>0 0 1</ambient>
+<diffuse>0 0 1</diffuse>
+<specular>0 0 1</specular>
+<shininess>100</shininess>
+<!--the following four will be relevant in ray tracer -->
+<absorption>0.5 </absorption>
+<reflection>0.5</reflection>
+<transparency>0.0</transparency>
+<refractive>1.2</refractive>
+</material>
+<!-- light added to object node -->
+</object>
+</transform>
+</scene>

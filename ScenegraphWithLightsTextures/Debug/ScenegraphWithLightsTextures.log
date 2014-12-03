@@ -1,0 +1,30 @@
+﻿Build started 12/3/2014 4:03:28 PM.
+     1>Project "C:\Users\Seth\Desktop\IT356\ScenegraphWithRayTracers\ScenegraphWithLightsTextures\ScenegraphWithLightsTextures.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I../../graphics/headers /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Scenegraph.cpp
+         Scenegraph.cpp
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\scenegraph.h(57): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\scenegraph.h(60): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\scenegraph.h(79): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\transformnode.h(198): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\scenegraph.cpp(91): warning C4244: 'argument' : conversion from 'float' to 'sf::Uint8', possible loss of data
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\scenegraph.cpp(145): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\scenegraph.cpp(157): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\scenegraph.cpp(195): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\scenegraph.cpp(196): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\scenegraph.cpp(197): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\scenegraph.cpp(198): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\scenegraph.cpp(222): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\seth\desktop\it356\scenegraphwithraytracers\scenegraphwithlightstextures\scenegraph.cpp(262): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Seth\Desktop\IT356\ScenegraphWithRayTracers\Debug\ScenegraphWithLightsTextures.exe" /INCREMENTAL /NOLOGO /LIBPATH:../../graphics/lib/GL /LIBPATH:../../graphics/lib/SFML "sfml-window-d.lib" "sfml-graphics-d.lib" "sfml-system-d.lib" opengl32.lib glew32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Seth\Desktop\IT356\ScenegraphWithRayTracers\Debug\ScenegraphWithLightsTextures.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Seth\Desktop\IT356\ScenegraphWithRayTracers\Debug\ScenegraphWithLightsTextures.lib" /MACHINE:X86 Debug\Light.obj
+         Debug\Scenegraph.obj
+         Debug\ScenegraphViewer.obj
+         Debug\Texture.obj
+         Debug\View.obj
+         ScenegraphWithLightsTextures.vcxproj -> C:\Users\Seth\Desktop\IT356\ScenegraphWithRayTracers\Debug\ScenegraphWithLightsTextures.exe
+     1>Done Building Project "C:\Users\Seth\Desktop\IT356\ScenegraphWithRayTracers\ScenegraphWithLightsTextures\ScenegraphWithLightsTextures.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:24.56

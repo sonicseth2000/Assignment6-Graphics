@@ -1,0 +1,351 @@
+<!-- Seth Davis & Mike Poulsen-->
+<!-- IT356 -->
+<!-- 10/23/2014 -->
+<!-- Assignment4 -->
+<scene>
+	<instance name="sphere" path="models/sphere" />
+	<instance name="box" path="models/box" />
+	<instance name="inverted-box" path="models/inverted-box" />
+	<instance name="cylinder" path="models/cylinder" />
+	<instance name="cone" path="models/cone" />
+<image name="checkerboard" path="checkerboard.png" />
+<image name="amit" path="amit.png" />
+<image name="empty" path="empty.png" />
+
+	<transform>
+		<set>
+						<scale> 10 10 10 </scale> 
+			<translate> 0 10.0 0 </translate>
+		</set>
+<light>
+<ambient>.2 .2 .2</ambient>
+<diffuse>.4 .4 .4</diffuse>
+<specular>0.8 0.8 0.8</specular>
+<shininess>3</shininess>
+<position>0 -100 0</position>
+<spotangle>90</spotangle>
+<spotdirection>1 0 0 </spotdirection>
+</light>
+		<group name ="merry_go_round">
+			<transform>
+				<set>
+					<scale>800 800 800</scale>
+					<translate> -4 0 0</translate>
+				</set>
+				<object instanceof="inverted-box" texture="amit">
+					<material>
+						<color>1 1 1</color>
+					</material>
+				</object>
+
+
+
+
+			</transform>
+			<transform name = "merry_go_round_t">
+				<set>
+				</set>
+				<group>
+					<transform name="chairs1">
+						<set>
+							<translate>-3.5 0 0</translate>
+						</set>
+					<group name = "chairs">
+						<set>
+						</set>
+						<transform name ="chair1">
+							<set>	
+								<translate> 0.0 0.0 1.5</translate>
+							</set>
+							<transform name = "chair">
+								<set>
+								</set>
+								<group>
+									<transform>
+										<set>
+										</set>
+										<transform name = "chair-bottom">
+											<set>
+												<scale> 1.0 0.2 .8</scale>
+												<translate> 0 .1 0</translate>
+											</set>
+											<object instanceof="box">
+												<material>
+													<color>0 1 0</color>
+												</material>
+											</object>	
+										</transform>		
+									</transform>
+									<transform>
+										<set>
+				
+										</set>
+										<transform name = "chair-back">
+											<set>
+												<scale> 1.0 1.5 .2</scale>
+												<translate> 0 .75 -.5</translate>
+											</set>
+											<object instanceof="box" texture="checkerboard">
+												<material>
+													<color>0 .5 0</color>
+												</material>
+											</object>
+										</transform>			
+									</transform>
+									<transform>
+										<set>
+				
+										</set>
+										<transform name = "chair-connector">
+											<set>
+												<scale> .2 .2 .8</scale>
+												<translate> 0 .75 -1</translate>
+											</set>
+											<object instanceof="box">
+												<material>
+													<color>1 0 0</color>
+												</material>
+											</object>
+										</transform>			
+									</transform>
+								</group>
+							</transform>
+						</transform>
+						<transform name="chair2">
+							<set>
+								<rotate>90 0 1 0</rotate>
+								<translate> 1.5 0.0 0.0</translate>
+							</set>
+							<group name="chair" copyof="chair" />
+						</transform>
+						<transform name="chair3">
+							<set>
+								<rotate>180 0 1 0</rotate>
+								<translate> 0.0 0.0 -1.5</translate>
+							</set>
+							<group name="chair" copyof="chair" />
+						</transform>
+						<transform name="chair4">
+							<set>
+								<rotate>270 0 1 0</rotate>
+								<translate> -1.5 0.0 0.0</translate>
+							</set>
+							<group name="chair" copyof="chair" />
+						</transform>
+						<transform>
+							<set>
+				
+							</set>
+							<transform name = "rod-connector">
+								<set>
+									<scale> .2 .3 .2</scale>
+									<translate> 0 .80 0</translate>
+								</set>
+								<object instanceof="box">
+									<material>
+										<color>0 1 1</color>
+									</material>
+								</object>
+							</transform>			
+						</transform>
+						<transform>
+							<set>
+				
+							</set>
+							<transform name = "rod-connector">
+								<set>
+									<scale> .1 2 .1</scale>
+									<translate> 0 .95 0</translate>
+								</set>
+								<object instanceof="cylinder">
+									<material>
+										<color>1 0 1</color>
+									</material>
+								</object>
+							</transform>			
+						</transform>
+					</group>
+					</transform>
+					<transform  name="chairs2">
+						<set>
+							<translate>3.5 0 0</translate>
+						</set>
+							<light>
+<ambient>.6 .6 .6</ambient>
+<diffuse>.6 .6 .6</diffuse>
+<specular>0.8 0.8 0.8</specular>
+<shininess>10</shininess>
+<position>0 0 0</position>
+<spotangle>90</spotangle>
+<spotdirection>1 0 0 </spotdirection>
+</light>
+						<group name= "chairs2" copyof="chairs"/>
+					</transform>
+					<transform name="chairs3">
+						<set>
+							<translate>0 0 3.5</translate>
+						</set>
+						<group name= "chairs3" copyof="chairs"/>
+					</transform>
+					<transform name="chairs4">
+						<set>
+							<translate>0 0 -3.5</translate>
+						</set>
+						<group name= "chairs4" copyof="chairs"/>
+					</transform>
+					<group name="top">
+						<transform>
+							<set>
+							</set>
+							<transform name = "main">
+								<set>
+									<scale> .1 2.95 .1</scale>
+									<translate> 0 0.0 0</translate>
+								</set>
+								<object instanceof="cylinder">
+									<material>
+										<color>0 1 1</color>
+									</material>
+								</object>
+							</transform>			
+						</transform>
+						<transform>
+							<set>
+								<rotate>90 0 0 1</rotate>
+								<translate> 0 3.05 0</translate>
+							</set>
+							<transform name = "support1">
+								<set>
+									<scale> .2 7.2 .2</scale>
+
+								</set>
+								<object instanceof="box">
+									<material>
+										<color>.3 .3 .3</color>
+									</material>
+								</object>
+							</transform>			
+						</transform>
+						<transform>
+							<set>
+								<rotate>90 1 0 0</rotate>
+								<translate> 0 3.05 0</translate>
+							</set>
+							<transform name = "support2">
+								<set>
+									<scale> .2 7.2 .2</scale>
+
+								</set>
+								<object instanceof="box">
+									<material>
+										<color>.7 .7 .7</color>
+									</material>
+								</object>
+							</transform>			
+						</transform>
+					</group>
+				</group>
+			</transform>
+			<transform>
+				<set>
+				</set>
+				<group name="base">
+					<transform>
+						<set>
+						</set>
+						<transform name = "main">
+							<set>
+								<scale> .1 4.00 .1</scale>
+								<translate> 0 -4.0 0</translate>
+							</set>
+							<object instanceof="cylinder" texture="checkerboard">
+								<material>
+									<color>0 1 1</color>
+								</material>
+							</object>
+						</transform>			
+					</transform>
+					<transform>
+						<set>
+						</set>
+						<transform name = "joint">
+							<set>
+								<scale> .15 .15 .15</scale>
+								<translate> 0 0.0 0</translate>
+							</set>
+							<object instanceof="sphere">
+								<material>
+									<color>1 0 0</color>
+								</material>
+							</object>
+						</transform>			
+					</transform>
+				</group>
+			</transform>
+	<transform>
+	<set>
+		<scale>.03 .03 .03 </scale>
+		<translate> 8 0 0</translate>
+	</set>
+	<group>
+	<transform name="seat1">
+	<set></set>
+	<group name="seat">
+	<transform name="seatbottom">
+	<set>
+		
+		<scale> 20 1 20 </scale>
+		<translate>0 -10 10</translate>
+	</set>
+	<object instanceof="box">
+		<material>
+			<color>0 0 1</color>
+		</material>
+	</object>
+	</transform>
+	<transform name="seattop">
+	<set>
+		<scale> 20 20 1 </scale>
+	</set>
+	<object instanceof="box" texture="checkerboard">
+		<material>
+			<color>1 1 1</color>
+		</material>
+	</object>
+	</transform>
+	</group>
+	</transform>
+	
+	
+	<transform name="seat2">
+	<set>
+		<translate>20 0 0</translate>
+	</set>
+	<group name="seat" copyof="seat" />
+	</transform>
+
+	<transform name="seat3">
+	<set>
+		<translate>40 0 0</translate>
+	</set>
+	<group name="seat" copyof="seat" />
+	</transform>
+
+	<transform name="seat4">
+	<set>
+		<translate>-20 0 0</translate>
+	</set>
+	<group name="seat" copyof="seat" />
+	</group>
+	</transform>
+			</transform>
+		</group>
+
+
+
+
+
+
+
+	</transform>
+</scene>
